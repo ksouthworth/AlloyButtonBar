@@ -67,7 +67,6 @@ function Controller() {
         return buttonStyle;
     }
     function selectButton(buttonIndex) {
-        console.log("selectButton : " + buttonIndex);
         if (0 > buttonIndex || buttonIndex > _buttons.length - 1) return false;
         var havePreviousButton = null !== _selectedIndex;
         var buttonIndexChanged = _selectedIndex !== buttonIndex;
@@ -131,7 +130,6 @@ function Controller() {
     var _selectedIndex = null;
     if (arguments[0]) {
         var args = arguments[0];
-        console.log("args = " + JSON.stringify(args));
         if (args.id) {
             exports.id = args.id;
             delete args.id;

@@ -180,7 +180,7 @@ function Controller() {
         title: "5"
     }) ];
     $.buttonBar4.addButtons(buttons);
-    $.buttonBar4.selectedIndex = 2;
+    $.buttonBar4.selectedIndex = 0;
     $.buttonBar4.addEventListener("click", function(e) {
         console.log("test.js -> buttonBar4 handler : e = " + JSON.stringify(e));
     });
