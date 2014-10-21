@@ -1,0 +1,4 @@
+<Alloy>
+    <View id="buttonBar" class="buttonBar" layout="horizontal" bubbleParent="false">
+    </View>
+</Alloy>

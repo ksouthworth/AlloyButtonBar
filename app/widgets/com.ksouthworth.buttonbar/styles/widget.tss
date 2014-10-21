@@ -1,0 +1,12 @@
+".buttonBar": {
+    borderColor: '#007AFF',
+    borderWidth: 1,
+    borderRadius: 4,
+    buttonColor: '#007AFF',
+    selectedButtonColor: 'white',
+    selectedButtonBackgroundColor: '#007AFF'
+}
+
+".buttonBar[platform=android]": {
+    buttonBackgroundColor: 'white'
+}

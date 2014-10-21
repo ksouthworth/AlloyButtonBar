@@ -1,0 +1,44 @@
+<Alloy>
+    <Window class="container" backgroundColor="white" top="20">
+        <View layout="vertical">
+
+            <Label platform="ios">iOS Tabbed Bar</Label>
+            <TabbedBar platform="ios">
+                <Labels>
+                    <Label>One</Label>
+                    <Label>Two</Label>
+                    <Label>Three</Label>
+                </Labels>
+            </TabbedBar>
+
+            <Label>Button Bar 1</Label>
+            <Widget src="com.ksouthworth.buttonbar" id="buttonBar1" class="barClass1" buttonColor="red" selectedButtonColor="white" selectedButtonBackgroundColor="blue">
+                <Button>One</Button>
+                <Button color="yellow" backgroundColor="orange" selectedColor="black">Two</Button>
+                <Button onClick="directButtonHandler">Three</Button>
+                <Button>Four</Button>
+            </Widget>
+
+            <Label>Button Bar 2</Label>
+            <Widget src="com.ksouthworth.buttonbar" id="buttonBar2" class="barClass2" height="60dp" onClick="buttonBarClickHandler">
+                <Button>One Uno</Button>
+                <Button>Two Dos</Button>
+                <Button>Three Tres</Button>
+            </Widget>
+
+            <Label>Button Bar 3</Label>
+            <View height="100dp">
+                <Widget src="com.ksouthworth.buttonbar" id="buttonBar3" class="barClass3" height="Ti.UI.FILL" selectedIndex="2">
+                    <Button>One (1)</Button>
+                    <Button>Two (2)</Button>
+                    <Button>Three (3)</Button>
+                </Widget>
+            </View>
+
+            <Label>Button Bar 4</Label>
+            <Widget src="com.ksouthworth.buttonbar" id="buttonBar4" selectedIndex="3">
+            </Widget>
+
+        </View>
+    </Window>
+</Alloy>

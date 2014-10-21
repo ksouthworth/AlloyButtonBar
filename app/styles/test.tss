@@ -1,0 +1,18 @@
+".barClass1": {
+    backgroundColor: 'purple'
+}
+/* On Android the container view's backgroundColor does NOT show through
+*  but we can set the buttonBackgroundColor explicitly to get the same effect
+*/
+".barClass1[platform=android]": {
+    buttonBackgroundColor: 'purple'
+}
+".barClass2": {
+
+}
+".barClass3": {
+    backgroundColor: 'orange'
+}
+".barClass3[platform=android]": {
+    buttonBackgroundColor: 'orange'
+}

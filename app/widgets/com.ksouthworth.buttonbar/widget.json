@@ -1,0 +1,13 @@
+{
+	"id": "com.ksouthworth.buttonbar",
+	"name": "ButtonBar",
+	"description" : "ButtonBar component where only 1 button can be 'selected' at a time, with the ability to style each button independently",
+	"author": "Kevin Southworth",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2014",
+	"license":"Public Domain",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"3.4",
+	"tags":"",
+	"platforms":"android,ios"
+}
