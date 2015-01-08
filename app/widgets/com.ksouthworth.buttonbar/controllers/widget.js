@@ -19,16 +19,16 @@ var DEFAULT_BAR_HEIGHT = '30dp';
 var WIDGET_STYLE_NAMES = [
   'buttonColor',
   'selectedButtonColor',
-  'buttonBackgroundColor', 'buttonBackgroundGradient', 'buttonBackgroundImage', 'buttonBackgroundRepeat',
+  'buttonBackgroundColor', 'buttonBackgroundGradient', 'buttonBackgroundImage', 'buttonBackgroundRepeat', 'buttonBorderWidth', 'buttonBorderColor',
   'selectedButtonBackgroundColor', 'selectedButtonBackgroundGradient', 'selectedButtonBackgroundImage', 'selectedButtonBackgroundRepeat',
 ];
 var BUTTON_BAR_STYLE_NAMES = [
-  'height', 'width',
+  'height', 'width', 'top', 'right', 'bottom', 'left',
   'backgroundColor', 'backgroundGradient', 'backgroundImage', 'backgroundRepeat',
   'borderColor', 'borderWidth', 'borderRadius'
 ];
 var BUTTON_STYLE_NAMES = [
-  'color', 'backgroundColor', 'backgroundGradient', 'backgroundImage', 'backgroundRepeat',
+  'color', 'backgroundColor', 'backgroundGradient', 'backgroundImage', 'backgroundRepeat', 'borderWidth', 'borderColor',
   'selectedColor','selectedBackgroundColor', 'selectedBackgroundGradient', 'selectedBackgroundImage', 'selectedBackgroundRepeat'
 ];
 var _buttons = [];
@@ -213,6 +213,10 @@ function setSelectedIndex(index) {
   return true;
 }
 
+function getAtIndex(index) {
+  return _buttons[index];
+}
+
 /**
  * EXPORTS
  */
@@ -220,6 +224,8 @@ exports.addButtons = addButtons;
 
 exports.setSelectedIndex = setSelectedIndex;
 exports.getSelectedIndex = getSelectedIndex;
+exports.getAtIndex = getAtIndex;
+
 Object.defineProperty($, "selectedIndex", {
     get: getSelectedIndex,
     set: setSelectedIndex
